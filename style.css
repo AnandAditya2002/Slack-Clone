@@ -1,0 +1,732 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+#navbar {
+    /* margin-top: 0px; */
+    padding: 19px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #541554;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#navbar ul li {
+    list-style: none;
+    color: white;
+}
+
+#navbar ul li a  {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 8px;
+  }
+.product_arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.Product_drop {
+    visibility: hidden;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    color: black !important;
+    left: 20%;
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px gray;
+}
+.Product_drop li {
+    color: black !important;
+    display: block;
+    text-align: start;
+    font-weight: bold;
+}
+
+.product:hover .Product_drop {
+    visibility: visible;
+}
+
+.Product_drop li:hover {
+    background-color: blue;
+}
+
+#level1 ul li {
+    padding: 5px;
+}
+#level1 ul li a :hover{
+    text-decoration: underline;
+}
+#level2 ul li a :hover{
+    text-decoration: underline;
+}
+.logo_text {
+    font-size: 50 rem;
+    padding: 8px;
+    color: white;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+#logo :hover{
+    cursor: pointer;
+}
+#zoom_glass{
+    cursor: pointer;
+}
+#sales {
+    padding: 10px 10px;
+    border: 0.150rem solid white;
+    color: white;
+    background-color: #541554;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+
+}
+#sales:hover{
+    border: 0.125rem solid white;
+}
+#free {
+    padding: 10px 10px;
+    color: #541554;
+    border: 0.150rem solid white;
+    background-color: white;
+    border-radius: 4px;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+#free:hover{
+    border: 0.125rem solid white;
+    
+}
+#magnify img {
+    filter: invert(100%);
+}
+
+.hero_header {
+    color: white;
+    font-size: 4rem;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.digitalHQ {
+    color: #ecb22e !important;
+}
+
+.hero_sub_header {
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.hero_sub_header2 {
+    font-size: 1.7rem;
+    margin-top: 1em;
+}
+
+#card {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    color: white;
+    font-size: 2.75 em;
+    width: 109%;
+}
+
+#card span {
+    /* background-color: #541554; */
+    font-size: 22.75 em;
+    color: white;
+}
+
+#gap {
+    display: flex;
+    align-items: center;
+    column-gap: 1.3%;
+}
+
+.emailsignup {
+    background-color: white;
+    color: #541554;
+    border-radius: 4px;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: .900rem;
+    padding: 20px 40px;
+    border-color: white;
+}
+
+.googlesignup {
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: .900rem;
+    background-color: #4285f4;
+    border-color: #4285f4;
+    border-radius: 4px;
+    color: white;
+    /* padding: 19px 40px 20px; */
+}
+
+#googlelogo img {
+    background-color: white;
+    padding: 14px;
+}
+
+#googlelogo {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    padding: 4px 6px;
+}
+
+#section1 {
+    background-color: #541554;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 53% 45%;
+    grid-column-gap: 2%;
+    justify-items: center;
+    padding: 0.5rem 6.5rem;
+    height: 70vh;
+}
+
+#companies ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#companies ul li {
+    padding: 30px 30px 60px 60px;
+}
+
+#section2 {
+    padding-top: 3rem;
+    padding-bottom: 0;
+    background-color: #f4ede4 !important;
+}
+
+#section2 h1 {
+    font-size: .875rem;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    /* margin-top: 50px; */
+    text-align: center;
+}
+
+#video {
+    display: inline-block;
+    width: 600px;
+    height: auto;
+}
+
+.section3 {
+    background-color: #f4ede4 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 0; */
+}
+
+.Para {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 7%;
+    align-items: center;
+    justify-items: center;
+    padding: 2em;
+    width: 85%;
+    overflow: hidden;
+}
+
+.Para-header {
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 750;
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.Para_desc {
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    box-sizing: inherit;
+}
+
+.paraLink a {
+    color: #1264a3;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.paraLink a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.400rem;      /*give space b/w content and underline*/
+}
+
+.heading {
+    text-align: center;
+}
+
+.Enterprice {
+    display: flex;
+    align-items: center;
+}
+
+#btn3 {
+    cursor: pointer;
+    background-color: #541554;
+    color: white;
+    padding: 19px 40px 20px;
+    align-items: center;
+    margin: 0.25rem ;
+    border-radius: 1rem;
+    border-color: #541554;
+    font-size: .875rem;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 700;
+}
+
+#btn4 {
+    cursor: pointer;
+    background-color: white;
+    color: #541554;
+    padding: 19px 40px 20px;
+    align-items: center;
+    margin: 0.25rem ;
+    border-radius: 1rem;
+    border-color: #541554;
+    font-size: .875rem;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.heading h1 {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.125rem;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    /* padding: 5rem; */
+}
+
+.heading p {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.Enterprise {
+    font-size: 2rem;
+    margin-bottom: 4rem !important;
+    box-sizing: inherit;
+    margin-top: 1rem !important;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.percent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.125rem;
+    box-sizing: inherit;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.percent_element {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.percent_element h1 {
+    color: #541554;
+    font-size: 3em;
+}
+
+.section5 {
+    display: grid;
+    grid-template-columns: 45.7805% 49.2439%;
+    grid-column-gap: 2em;
+    /* align-items: center; */
+    height: 380px;
+}
+
+#mark_smith {
+    margin-top: 2rem;
+    align-items: center;
+}
+
+#mark {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+
+}
+.section5_description {
+    font-size: 1.7rem;
+    font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.video{
+    padding: 0rem 5rem;
+}
+#stories{
+    margin-top: 2rem;
+}
+#stories a {
+    font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+    color: #1264a3;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+#stories a ::after{
+    background-image: url(file:///C:/Users/anand/Desktop/Clone/arrow.svg);
+    width: 19px;
+    height: 13px;
+}
+#baseline p{
+    text-align: center;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+}
+.section6 {
+	display: flex;
+	background-color: white;
+	padding: 2.5rem;
+	align-items: center;
+	justify-content: center;
+	gap: 1.25rem;
+    width: 100%;
+	height: auto;
+	flex-direction: column;
+}
+.haters {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	gap: 20px;
+
+}
+.card {
+    background-color: var(--bar);
+	width: 90%;
+    margin: auto;
+	border: 2px solid purple;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-direction: column;
+	padding: 14px;
+    transition: all 200ms linear;
+
+}
+.card:hover {
+	transform: scale(1.05);
+}
+.card_content {
+	color: white;
+	font-weight: semibold;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.card_content p:last-child {
+	font-size: 1.2rem;
+	font-weight: bolder;
+}
+
+.card_image {
+	width: 100%;
+	object-fit: cover;
+}
+.card_footer {
+	display: flex;
+	color: #fff;
+	justify-items: space-between;
+    align-self: stretch;
+}
+.card_footer p:first-child {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+/* .section6{
+    background-color: #f4ede4;
+    padding: 1.25rem ; */
+    /* width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+}
+#Haters{S
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    grid-column-gap: 2%;
+    align-items: center;
+
+}
+.card1{
+    padding : 1rem ;
+    text-decoration: none;
+    background-color: #541554;
+    color: white;
+    cursor: pointer;
+}
+.card1 :hover{
+    /* width: 22%; */
+    transform: scale(1.5);
+}
+.card2{
+    padding: 1rem;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.card1 img{
+    display: block;
+    margin: auto;
+}
+.card2 img{
+    display: block;
+    margin: auto;
+}
+.card1 h3{
+    margin-bottom: 5rem;
+}
+.card2 h3{
+    margin-bottom: 5rem;
+    font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.card2 span {
+    display: inline-block;
+    padding: 1rem 0 1rem 0 ;
+}
+.work{
+    margin-bottom: 3.5rem !important;
+
+}
+.lover{
+    color: #1264a3;
+    cursor: pointer;
+    font-weight: 500;
+}
+.lover2{
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5rem;
+    font-weight: 500;
+} */
+.section7{
+    background-color: #541554;
+    color: white;
+    overflow: hidden;
+    object-fit: cover;
+}
+#wave{
+    display: block;
+}
+#cloud{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: #fff!important;
+    /* margin-top: 5rem;
+    margin-bottom: 3rem; */
+    font-family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+.section7_button{
+    display: flex;
+    justify-content: center;
+}
+.section8{
+    display: flex;
+    padding: 0 5rem;
+    /* margin-bottom: 1rem; */
+    align-items: start;
+    justify-content: space-around;
+
+}
+.border_white{
+    border-color: white !important; 
+    border-radius: 4px;
+}
+.menu{
+    display: grid;
+    grid-template-columns:  repeat(5,1fr) ;
+    padding-bottom: 2.5rem;
+    /* padding-left: 10rem; */
+    
+}
+.menuitems{
+    padding: 0 2rem;
+}
+.menuitems li{
+     padding: 0.6rem;
+     list-style: none;
+     text-decoration: none !important;
+}
+.menuitems li a{
+    text-decoration: none;
+    color: rgb(25, 24, 24);
+}
+.menuitems li  :hover{
+    color: #4285f4;
+}
+.image{
+    display: inline-block;
+    cursor: pointer;
+}
+.horizontal{
+    /* width: 100vh; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+}
+.last{
+    display: flex;
+     align-items: center;
+    justify-content: space-between; 
+}
+.contact ul{
+    align-items: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.contact ul li a{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    
+}
+.contact ul li a :hover{
+    color: #4285f4;
+}
+.contact ul li a img{
+    padding:  0 0.5rem;
+}
+.photos ul{
+    display: flex;
+    align-items: center; 
+     justify-content: center;
+    list-style: none;
+}
+.photos ul li img{
+    padding:  0 0.5rem;
+    text-decoration: none;
+    color: #4285f4;
+}
+.photos ul li  :hover{ 
+    /* padding:  0 0.5rem;
+    text-decoration: none; */
+    color: #4285f4;
+    cursor: pointer;
+}
+.photos ul li a{
+    display: flex;
+    text-decoration: none;
+    color: #4285f4;
+}
+.last{
+    padding: 0.5rem 0;
+}
+.download{
+    display: inline-block;
+
+}
+.section9 {
+    padding: 0 5rem 0 3rem ;
+    justify-content: space-between;
+}
+.region a {
+    display: flex;
+}
+.region  :hover{
+    color: #4285f4;
+}
+footer{
+    text-align: start;
+    padding-left: 3rem ;
+    padding-top:  1rem;
+    padding-bottom: 2.5rem;
+}
+/* Page content */
+.content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
